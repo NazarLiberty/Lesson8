@@ -16,6 +16,7 @@ body{
     align-content: space-between;
 }
 .content_flex>div{
+    background-color: black;
     display: flex;}
     
 
@@ -24,12 +25,14 @@ height: 550px;
 width: 740px;
 justify-content: flex-start;
 align-items: flex-end;
+
 }
 .flex_one div{
     margin-left: 20px;
     color:white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     position: absolute;
+    
 }
 .flex_one h1{
     font-size: 30px;
@@ -46,13 +49,14 @@ align-items: flex-end;
     position: absolute;
     display: none;
 }
-.flex_one:hover svg{
-display: block;   
-cursor: pointer; 
+.flex_one:hover img{
+opacity: 0.8;
+}
+.content_flex:not(.flex_one) div:hover *{
+    opacity: 0.9;
 }
 .content_flex .flex_two, .flex_three, .flex_four, .flex_five{
     height: 550px;
-    background-color: white;
     flex-direction: column;
     width: 360px;
 }
@@ -64,7 +68,8 @@ height: 50%;}
     display: flex;
     height: 50%;
     justify-content: space-around;
-    margin-left: 25px;
+    background-color: white;
+    padding-left: 25px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .content_flex :not(.flex_one) div h1{

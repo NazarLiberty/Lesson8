@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    transition: all .2s ease-out;
+}
+body{
+    background-color: #e2e7ec;
+}
+.content_flex{
+    width: 1120px;
+    height: 1120px;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+    margin: 0 auto;
+    align-content: space-between;
+}
+.content_flex>div{
+    display: flex;}
+    
+
+.content_flex .flex_one{
+height: 550px;
+width: 740px;
+justify-content: flex-start;
+align-items: flex-end;
+}
+.flex_one div{
+    margin-left: 20px;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: absolute;
+}
+.flex_one h1{
+    font-size: 30px;
+    max-width: 70%;
+}
+.flex_one p{
+    font-size: 13px;
+    opacity: 0.8;
+}
+.flex_one img{
+    height: 100%;
+}
+.flex_one svg{
+    position: absolute;
+    display: none;
+}
+.flex_one:hover svg{
+display: block;   
+cursor: pointer; 
+}
+.content_flex .flex_two, .flex_three, .flex_four, .flex_five{
+    height: 550px;
+    background-color: white;
+    flex-direction: column;
+    width: 360px;
+}
+.content_flex :not(.flex_one) img{
+height: 50%;}
+
+.content_flex :not(.flex_one) div{
+    flex-direction: column;
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+    margin-left: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.content_flex :not(.flex_one) div h1{
+    font-size: 22px;
+    margin-top: -30px;
+    max-width: 90%;
+}
+.content_flex :not(.flex_one) div p{
+font-size: 13px;
+opacity: 0.7;
+margin-bottom: 0;
+max-width: 50%;
+}
